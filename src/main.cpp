@@ -75,5 +75,8 @@ int main(int argc, char **argv)
             tempfile << line << std::endl;
         }
 
+    remove(p);
+    rename(ptemp,p);
+
     return 0;
 }
