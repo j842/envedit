@@ -32,8 +32,10 @@ void terminate(std::string s)
 
 int main(int argc, char **argv)
 {
-    if (argc<3)
+    if (argc<3) {
         showhelp();
+	exit(0);
+	}
 
     path p(argv[1]);
     if (!exists(p))
